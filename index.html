@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="block-icon" data-type="input">
+            <img src="input.svg" alt="Input Block">
+            <span>Input</span>
+        </div>
+        <div class="block-icon" data-type="process">
+            <img src="process.svg" alt="Process Block">
+            <span>Process</span>
+        </div>
+        <div class="block-icon" data-type="decision">
+            <img src="decision.svg" alt="Decision Block">
+            <span>Decision</span>
+        </div>
+        <div class="block-icon" data-type="output">
+            <img src="output.svg" alt="Output Block">
+            <span>Output</span>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html> 

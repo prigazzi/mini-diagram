@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none; /* Prevent text selection during drag */
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 80px;
+    background: #f0f0f0;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.block-icon {
+    width: 60px;
+    height: 80px;
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    padding: 8px 0;
+}
+
+.block-icon:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.block-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.block-icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+    pointer-events: none; /* Prevent image from interfering with drag */
+}
+
+.block-icon span {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none; /* Prevent text from interfering with drag */
+}
+
+canvas {
+    flex: 1;
+    background-color: white;
+} 
