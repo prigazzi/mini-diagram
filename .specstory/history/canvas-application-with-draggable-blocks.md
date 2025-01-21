@@ -4023,6 +4023,40 @@ I'll help you create a GitHub repository and commit the files.
 
 ---
 
+_**Assistant**_
+
+```
+git init && git add . && git commit -m "First hour of Cursor"
+```
+
+---
+
+_**Assistant**_
+
+```
+git remote add origin https://github.com/pablovillacanas/mini-diagram.git
+```
+
+---
+
+_**Assistant**_
+
+
+
+---
+
+_**User**_
+
+Create a quick README.md file with a short description of the project tailored to a viewer who is a developer, praising the simple of the approach and how it was built with Cursor in less than two hours. 
+
+---
+
+_**Assistant**_
+
+
+
+---
+
 
 
 ---
